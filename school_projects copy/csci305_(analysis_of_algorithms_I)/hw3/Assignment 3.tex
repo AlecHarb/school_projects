@@ -1,0 +1,174 @@
+
+%%%          IGNORE ALL OF THIS        %%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{fancyhdr}
+\usepackage[all]{xy}
+\usepackage[utf8]{inputenc} %useful to type directly accentuated characters
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+
+\setlength\topmargin{-1in}
+\setlength\headheight{1in}
+\setlength\headsep{.5in}
+\setlength\textheight{8.5in}
+\setlength\textwidth{6.5in}
+\setlength\oddsidemargin{0in}
+\setlength\evensidemargin{0in}
+
+\usepackage{mathtools}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\usepackage[parfill]{parskip} 
+
+\setlength{\parindent}{0pt}
+
+\usepackage{forest}
+
+
+\begin{document}
+%%%          ADD TEXT DOWN HERE       %%%%%%%%%%
+
+\pagestyle{fancy}
+\lhead{Alec Harb
+\\ March 5, 2020}
+\rhead{CSCI 305}
+\chead{\Large Assignment 3}
+
+\vspace{5mm} %%this just adds a blank line if you need it
+
+\section{Question 1}
+
+\subsection{a.}
+
+Given a node of index $i$ with $m$ children per node, the last index of $i$'s child is given by $i*m + 1$. To get the first index of $i$'s child, we subtract $(m-1)$ because we are removing all children except for the first one. Let $p = $ parent index. Then this gives the equation:\\
+ \\$i = p*m + 1 - (m - 1)$
+ \\$i = p*m + 1 - m + 1$
+ \\$i = p*m - m + 2$ \\
+ \\Now we solve for the parent index which gives: \\
+ \\$p ={\frac{i + m - 2}{m} }$ \\ \\
+ We now take the floor of this because the next whole integer will not appear until we reach the next node's children. This gives: 
+ 
+ \begin{algorithm}
+\caption{M-ARY-PARENT(i)}
+\begin{algorithmic} 
+\STATE return  $\floor*{\frac{i + m - 2}{m} }$
+\end{algorithmic}
+\end{algorithm}
+
+Now to get the child node, we use the same idea as above, but instead of subtracting $(m-1)$  we subtract $(m-j)$ because we want to find the $j$'th child given $m$ children. Given $i$ as the parent and $j$ as $i$'s $j$'th child, we have: \\ \\
+$child = i*m + 1 - (m - j)$ \\
+$child = i*m + 1 - m + j$ \\
+$child = i(m-1) + 1 + j$ 
+
+ \begin{algorithm}
+\caption{M-ARY-Child(i,j)}
+\begin{algorithmic} 
+\STATE return  $i(m+1) + 1 + j$
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{b.}
+
+Given that each node will split $m$ times subsequent level of the tree, we have that the $height = log_m(n)$.
+
+\subsection{c.}
+
+For our algorithm, we need to swap the first (largest) element of the heap with the last (smallest) element of the heap. Then we run MAX-HEAPIFY on the root to ensure the max-heap properties still hold.
+
+\begin{algorithm}
+\caption{Extract-max(A,i,n,m)}
+\begin{algorithmic}
+\STATE $max = A[i]$
+\STATE exchange A[i] with A[n]
+\STATE $n = n - 1$
+\STATE MAX-HEAPIFY(A, i, n, m) 
+\STATE return max
+\end{algorithmic}
+\end{algorithm}
+
+Our MAX-HEAPIFY method will be very similar to a binary MAX-HEAPIFY method except for the fact that we will need to iterate through all of the children to find the maximum rather than just looking at the left and right child. 
+
+For the runtime of Extract-max, all of the calls are O(1) except for MAX-HEAPIFY. For a binary heap, MAX-HEAPIFY has a runtime of $\theta(lg(n))$ because we are checking each child of a node and ensuring the max-heap properties hold. It follows that for a MAX-HEAPIFY method of m children, we have a runtime of  $\theta(log_m(n))$.
+
+\subsection{d.}
+
+For our algorithm, we need to insert the element to the last index of the heap and then percolate up.
+
+\begin{algorithm}
+\caption{Insert(A, key)}
+\begin{algorithmic}
+\STATE heapSize = heapSize + 1;
+\STATE A[heapSize] = key;
+\STATE PercolateUp(A, heapsize, m)
+\end{algorithmic}
+\end{algorithm}
+
+For the runtime of Insert, all the calls are O(1) except for the PercolateUp call. For a binary heap, PercolateUp has a runtime of $\theta(lg(n))$ because it will swap the key until it reaches the a location that makes the heap properties hold. For a heap with m children, the idea is the same except our runtime will be $\theta(log_m(n))$.
+
+\section{Question 2}
+
+For this problem, I assumed a min heap. The idea for this is very analogous to searching a balanced binary search tree. Suppose we take at an arbitrary node of index i. Then, because we are assuming a min heap, i's children will be greater than or equal i. This tells us that if the value of i is greater than the key, we do not have to search all of the children of i because we already know all those values will be greater than the key. This implies that we will only be searching for the nodes less than or equal to our key because if any node is greater than our key, we can remove that node and all of its children. This idea leads to the following algorithm with has a runtime of $O(p)$.  \\
+ \begin{algorithm}
+\caption{ArrayList findKeyElements(int[] A, int key, Arraylist aList, int index)}
+\begin{algorithmic} 
+\STATE n = length A
+\IF{($(index < n$ and  $A[index] <= key)$ }
+\STATE {add A[index] to aList}
+\STATE $left = 2*index$
+\STATE $right = 2*index + 1$
+\STATE $findKeyElements(A, key, aList, left)$
+\STATE $findKeyElements(A, key, aList, right)$
+\ENDIF
+\STATE return aList
+
+\end{algorithmic}
+\end{algorithm}
+\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+\section{Question 3}
+\subsection{a.}
+Let $i$ be any element in the diagonal from the bottom left to the top right of the array. Then by the constraints of the array, any element above $i$ will be less than $i$ and any element below will be greater than $i$. Additionally, any element to the left of $i$ is less than $i$ and any element to the right is greater than $i$. Now let $l$ be the first element of the diagonal (bottom left of the array). If we compare the key to $l$ and see that the key is greater than $l$, we must increase the current value by moving one index to the right. Similarly, If we see that the key is less than $l$, we must decrease the current value by moving one index up. We then repeat this process until the key is found or we reach the boundary of the array. This leads to the following algorithm. \\
+
+
+\begin{algorithm}
+\caption{findKey(int[][] A, int n, int key)}
+\begin{algorithmic} 
+\STATE i = n
+\STATE j = 0
+\WHILE{$(j <= n)$}
+\IF{(i $<$ 0)} 
+\STATE print(key not found)
+\STATE break
+\ENDIF
+\IF{(A[i][j] == key)}
+\STATE print((i,j))
+\STATE break
+\ELSIF{(A[i][j] $>$ key)}
+\STATE i = i - 1
+\ELSE
+\STATE j = j + 1
+\ENDIF
+\ENDWHILE
+
+\end{algorithmic}
+\end{algorithm}
+
+
+This algorithm's runtime is less than $\theta(n^2)$ because we do no have to search every element of the matrix. Instead, we are searching, at most, $2n$ elements because in the worst case, index $i$ will iterate from $n...0$ and index $j$ will iterate from $0...n$.  This implies that our algorithm is $\theta(n)$.\\
+To prove the correctness of this algorithm, we must construct a loop invariant and show that it is true before, during, and after each iteration. At each step, elements to the left and elements above of the current index will be less than the value of the current index. This will be our loop invariant because, from the logic above, this is always true independent of the current index and the elements in the array (assuming a "correct" array). In the first instance, we start at the bottom left of the array. Clearly there are no elements to the left and all elements above are less than our current value so our initialization step is true. Next we compare the current element to the key. In either case (move one index up or move one index to the right), due to the sortedness of the array, all elements to the left and above our current index will be less than the current index. This suggest that our maintenance step holds. In the worst case where no key is found, our final index will be on the right side of the array. Again, from the sortedness of the array, our loop invariant still holds in this stage which shows that our termination step holds as well. It follows that for any index we are currently at, the loop invariant is true which shows that our algorithm is correct.
+
+\end{document}
+
+%%%%%%%%%           THE END!           %%%%%%%%%%

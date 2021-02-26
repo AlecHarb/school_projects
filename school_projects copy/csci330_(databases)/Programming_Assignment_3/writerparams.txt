@@ -1,0 +1,3 @@
+dburl=jdbc:mysql://127.0.0.1:4321/harba
+user=harba
+password=,E)2nk=fe4

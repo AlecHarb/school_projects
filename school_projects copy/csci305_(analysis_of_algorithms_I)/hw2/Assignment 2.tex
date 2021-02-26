@@ -1,0 +1,180 @@
+
+%%%          IGNORE ALL OF THIS        %%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{fancyhdr}
+\usepackage[all]{xy}
+\usepackage[utf8]{inputenc} %useful to type directly accentuated characters
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+
+\setlength\topmargin{-1in}
+\setlength\headheight{1in}
+\setlength\headsep{.5in}
+\setlength\textheight{8.5in}
+\setlength\textwidth{6.5in}
+\setlength\oddsidemargin{0in}
+\setlength\evensidemargin{0in}
+
+
+\usepackage[parfill]{parskip}
+
+\setlength{\parindent}{0pt}
+
+\usepackage{forest}
+
+
+\begin{document}
+%%%          ADD TEXT DOWN HERE       %%%%%%%%%%
+
+\pagestyle{fancy}
+\lhead{Alec Harb
+\\ February 11, 2020}
+\rhead{CSCI 305}
+\chead{\Large Assignment 2}
+
+\vspace{5mm} %%this just adds a blank line if you need it
+
+\section{Written Questions}
+
+\subsection{Q1 a.}
+Given 5 unique cards, the probability of picking 1 card is $\frac{1}{1}$. The probability of picking a second card that is alphabetical order is $\frac{1}{2}$.  It follows that to pick 4 cards in alphabetical order we have ($\frac{1}{1}$)($\frac{1}{2}$)($\frac{1}{3}$)($\frac{1}{4}$) or, more simply put, $\frac{1}{4!}$ $=$ $\frac{1}{24}$.
+
+
+\subsection{Q1 b.}
+In general, the number of cards in n is irrelevant to the number of permutations of picking $k$ cards in ascending order. It follows from (a) that for picking any number of k cards in ascending order, we have $\frac{1}{k!}$.
+
+\section{Q2}
+Listed from fastest growth to slowest growth: 
+
+$f_7(n) = 2^{2^n}$ \par
+$f_2(n) = (n + 0.001)!$ \par
+$f_6(n) = 2n*2^n$ \par
+$f_9(n) = (\frac{99}{98})^n$. \par
+$f_8(n) = n^{lg lg (n)}$ \par
+$f_5(n) = lg^2n$ \par
+$f_1(n) = \sqrt{2}^{log_2(n)}$ = $f_3(n) = \sqrt{n}$\par
+\par
+$f_4(n) = \sqrt{lg(n)}$   
+
+
+\par
+To test these algorithms, I compared each one with large values of n, as well as their graphs.\\ \\
+We know $f_4(n)$ is the slowest algorithm because, in general, $lg(n)$ has the slowest growth rate of any time complexity. Since this value is also square rooted, the time complexity is even slower. Additionally, when compared to all other algorithms for large values of $n$, $f_4(n)$ grows the slowest. \par
+For $f_1(n)$ and $f_3(n)$ we can use change of base on $f_1(n) = \sqrt{2}^{log_2(n)}$ to get $f_1(n) = n^{log_2(\sqrt{2})}$; $n^{log_2(\sqrt{2})}$ = 0.5 and $n^{0.5}$ = $\sqrt{n}$. Thus, $f_1(n) = f_3(n)$. \par$f_5(n)$ $>$ $f_1/f_3(n)$ because when graphed, due to the squared exponent, $f_5(n)$ grows significantly faster for large values of $n$.  
+
+$f_8(n)$ $>$ $f_5(n)$ because $f_8(n)$ has an n in the exponent. When graphed, this appears to be the case as $n$ gets very large. \par
+
+$f_9(n)$ $>$ $f_8(n)$ because although both have an $n$ in the exponent, the exponent for $f_9(n)$ grows much faster and results in a faster growth rate. \par
+
+$f_6(n)$ $>$ $f_9(n)$ because both have an exponent of $n$ but $\frac{99}{98}$ $<$ $2$ implies $f_9(n)$ grows slower. \par
+
+$f_2(n)$ $>$ $f_1(n)$ because, in general, factorials increase much faster than powers of $n$ as $n$ gets very large. \par
+
+$f_7(n)$ $>$ $f_2(n)$ because an exponent of $2^n$ grows much faster than a factorial.      
+   
+\section{Q3}
+\subsection{a.}
+
+MAXIMUM-SUBARRAY 
+
+\setlength{\parindent}{15pt}
+max = min[A]\\
+\indent $low = 0$\\
+\indent $high = 0$
+
+for  $i = 0:A.length$\\
+\indent sum = 0 
+
+
+\indent \indent for $j = 0:A.length$\\ \
+\indent \indent \indent
+sum += A[j] \\
+\indent \indent \indent
+if $(sum > max)$ \\
+\indent \indent \indent \indent
+$max = sum$ \\
+\indent \indent \indent \indent
+$low = i $\\
+\indent \indent \indent \indent
+$high = j$ \\
+\indent
+$return(low, high)$ 
+\setlength{\parindent}{0pt}
+
+\subsection{b.}
+In the first loop, we iterate through each value in the array. Additionally, for each index in loop 1, loop 2 iterates through the array from each of its indices to the end of the array. Essentially, we iterate through an array of size $n$, $n$ times. This implies that our algorithm is $\Theta(n^2)$.
+
+
+\section{Q4}
+
+Given the recurrence $T(n) = T(\frac{5n}{6}) + T(\frac{n}{6}) + cn$, where c is a constant, we want to show that the recurrence $T(n)$ is $\Omega(nlgn)$. First, we can draw a recurrence tree:
+
+\begin{tikzpicture}[level/.style={sibling distance=40mm/#1}]
+\node (z){$cn$}
+  child {node (a) {$c(\frac{5n}{6})$}
+    child {node  (b) {$c(\frac{25n}{36})$}
+      child {node (b1) {$\vdots$}
+       child {node (b11) {$D$}}
+      }
+      child {node (b2) {$\vdots$}
+       child {node (b12) {$D$}}
+      }
+    }
+    child {node (g) {$c(\frac{5n}{36})$}
+      child {node (g1) {$\vdots$}
+       child {node (g11) {$D$}}
+      }
+      child {node (g2) {$\vdots$}
+       child {node (g12) {$D$}}
+      }
+    }
+  }
+      child {node  (j) {$c(\frac{n}{6})$}
+    child {node (k) {$c(\frac{5n}{36})$}
+      child {node {$\vdots$}
+       child {node (k11) {$D$}}
+      }
+      child {node {$\vdots$}
+       child {node (k12) {$D$}}
+      }
+    }
+    child {node (l) {$c(\frac{n}{36})$}
+    child {node {$\vdots$}
+     child {node (l11) {$D$}}
+    }
+    child {node (c){$\vdots$}
+     child {node (l12) {$D$}
+            child [grow=right] {node (r) {$cn$} edge from parent[draw=none]
+              child [grow=up] {node (s) {$\vdots$} edge from parent[draw=none]
+                child [grow=up] {node (t) {$cn$} edge from parent[draw=none]
+                  child [grow=up] {node (u) {$cn$} edge from parent[draw=none]
+                   child [grow=up] {node (u) {$cn$} edge from parent[draw=none]}
+                  }
+                }
+              }
+            }
+            }
+    }
+  }
+};
+\path (b11) -- (b12) node [midway] {$\cdots$};
+\path (g11) -- (g12) node [midway] {$\cdots$};
+\path (k11) -- (k12) node [midway] {$\cdots$};
+\path (l11) -- (l12) node [midway] {$\cdots$};
+\end{tikzpicture}
+
+Each node of this tree is splitting in half which implies that it is dividing $n$, $lg(n)$ times. Additionally, we can see that at each subsequent level of the tree, $n$ amount of work is being done. Since there is $n$ (times a constant) amount of work being done $lg(n)$ times, our $T(n)$ = $\Omega(nlgn)$.
+\end{document}
+
+%%%%%%%%%           THE END!           %%%%%%%%%%

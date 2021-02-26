@@ -1,0 +1,54 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/harberbarber/247repo/Assignment 3/Ass3/Client.c
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+sys/shm.h
+-
+sys/stat.h
+-
+sys/mman.h
+-
+sys/types.h
+-
+shm.h
+/Users/harberbarber/247repo/Assignment 3/Ass3/shm.h
+
+/Users/harberbarber/247repo/Assignment 3/Ass3/Server.c
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+string.h
+-
+errno.h
+-
+sys/shm.h
+-
+sys/stat.h
+-
+sys/mman.h
+-
+sys/types.h
+-
+shm.h
+/Users/harberbarber/247repo/Assignment 3/Ass3/shm.h
+
+/Users/harberbarber/247repo/Assignment 3/Ass3/shm.h
+

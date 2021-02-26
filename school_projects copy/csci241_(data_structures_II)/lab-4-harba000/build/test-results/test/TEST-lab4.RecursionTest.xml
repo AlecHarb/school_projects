@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab4.RecursionTest" tests="36" skipped="0" failures="0" errors="0" timestamp="2019-02-06T04:24:56" hostname="Alecs-MBP" time="0.04">
+  <properties/>
+  <testcase name="test00Len" classname="lab4.RecursionTest" time="0.001"/>
+  <testcase name="test01Len" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test02Len" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test03Len" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test04Len" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test05CountE" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test06CountE" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test07CountE" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test08CountE" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test09CountE" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test10SumDigs" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test11SumDigs" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test12SumDigs" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test13SumDigs" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test14SumDigs" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test15Reverse" classname="lab4.RecursionTest" time="0.001"/>
+  <testcase name="test16Reverse" classname="lab4.RecursionTest" time="0.018"/>
+  <testcase name="test17Reverse" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test18Reverse" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test19Reverse" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test20BST" classname="lab4.RecursionTest" time="0.001"/>
+  <testcase name="test21BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test22BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test23BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test24BST" classname="lab4.RecursionTest" time="0.001"/>
+  <testcase name="test25BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test26BST" classname="lab4.RecursionTest" time="0.01"/>
+  <testcase name="test27BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test28BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test29BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test30BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test31BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test32BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test33BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test34BST" classname="lab4.RecursionTest" time="0.0"/>
+  <testcase name="test35BST" classname="lab4.RecursionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

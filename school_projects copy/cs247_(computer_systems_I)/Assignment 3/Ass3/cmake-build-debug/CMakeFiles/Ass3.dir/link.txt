@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Ass3.dir/main.c.o CMakeFiles/Ass3.dir/Server.c.o CMakeFiles/Ass3.dir/Client.c.o  -o Ass3 

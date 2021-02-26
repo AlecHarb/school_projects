@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab8.Lab8Test" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-03-06T04:36:13" hostname="wlan010-111-054-044.wlan.wwu.edu" time="0.026">
+  <properties/>
+  <testcase name="test09_paintBucket" classname="lab8.Lab8Test" time="0.017"/>
+  <testcase name="test08_paintBucket" classname="lab8.Lab8Test" time="0.0"/>
+  <testcase name="test04_characterToString" classname="lab8.Lab8Test" time="0.001"/>
+  <testcase name="test01_integerToInteger" classname="lab8.Lab8Test" time="0.0"/>
+  <testcase name="test06_stringToLinkedList" classname="lab8.Lab8Test" time="0.006"/>
+  <testcase name="test03_stringToString" classname="lab8.Lab8Test" time="0.001"/>
+  <testcase name="test07_stringToHashMapOfStringToString" classname="lab8.Lab8Test" time="0.0"/>
+  <testcase name="test02_integerToDouble" classname="lab8.Lab8Test" time="0.0"/>
+  <testcase name="test05_integerToString" classname="lab8.Lab8Test" time="0.001"/>
+  <system-out><![CDATA[            # # #            
+        # # #                
+      # # #                  
+  # # # # # #           # # #
+# # # # # # # #       #   #  
+# # #   # # # # #   # # #    
+# # # # # # # # # # # # # #  
+# # # # # # # # #   # # #    
+  # # # # # # #       #   #  
+    # # # # #           # # #
+    #                        
+      # #                    
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

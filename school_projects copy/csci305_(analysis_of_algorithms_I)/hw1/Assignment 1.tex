@@ -1,0 +1,46 @@
+
+\documentclass{article}
+
+\setlength{\parindent}{0pt}
+\newcommand{\forceindent}{\leavevmode{\parindent=2em\indent}}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\newcommand{\R}{\mathbb{R}}
+\begin{document}
+
+\title{CSCI305 - Homework 1}
+\date{Alec Harb}
+\maketitle
+
+\section{Written questions}
+
+\subsection{Q1}
+
+\forceindent If we look at the sum of 1+2+...+n we get the closed form $\frac{n(n+1)}{2}$. Intuitively, it makes sense that the sum of n digits of the set {\textit{S}} will be less than the arithmetic sum above because we will see repeated values that are less than or equal to n. In the context of our problem, the sum of 2000 integers in the set  {\textit{S}} will be less than $ \frac{2000(2001)}{2}$ = 2001000.  Since we are including the squares of all integers in the set, the number of repeated values will be equal to $\floor * {\sqrt{2000}}$ because no integer higher than this can be squared and be within the bounds of our problem. We see that $\sqrt{2000}$ = 44.72, therefore, we will have the squares of the first 44 natural numbers in our set. We can now see that our answer can be represented as $\sum_{n=1}^{1956} n$ + $\sum_{n=1}^{44} {n}^2$. The sum of ${1}^2+{2}^2+...+{n}^2$ can be written in the closed form as $\frac{n(n+1)(2n+1)}{6}$. Now we can expand our initial sum to $ \frac{1956(1957)}{2}$ + $\frac{44(45)(89)}{6}$ = 1943316. This number makes sense because it coincides with our earlier assumption that our final answer will be less than 2001000.
+	
+\par
+
+\forceindent In general, we can write the sum of the smallest n digits in the set {\textit{S}} as $\sum_{n=1}^{n - \floor * {\sqrt{n}}} k$ + $\sum_{n=1}^{\floor * {\sqrt{n}}} {k}^2$. To make this equation look slightly cleaner, we can let a = ${n - \floor * {\sqrt{n}}}$ and let b = $\floor * {\sqrt{n}}$. Now we can expand this out to get $ \frac{a(a+1)}{2}$ + $\frac{b(b+1)(2b+1)}{6}$ as our final answer in terms of n.
+	
+\subsection{Q2}
+a) VIKING-CALC takes an array of size $3n$ $\forall$ n $\in$  $\mathbb{N}$. For each 3 indices, starting from the end of the array, it will compare [(last element) x (first element)] to [(last element) x (second element)]  and, if equal, will add to the output the quantity [output + (test x condition)]. This whole process repeats until the array is empty.
+\par
+b) For the array $A={3,2,4,2,1,1,3,2,1,2,2,6,2,1,4}$, VIKING-CALC returns 4.
+\par
+c) Line 7 will get executed 0 times if test $\neq$ condition for the whole array. It will get executed the most number of times if test == condition for each 3 indices of the array.
+\par
+d) $T(n)$ of VIKING-CALC is $c_1 + \frac{n}{3} (c_2+ c_3 + c_4 + c_5 + c_6 + c_7) + c_8$
+\par
+e) $T(n)$ of VIKING-CALC when line 7 is executed the fewest number of times is
+	$c_1 + \frac{n}{3} (c_2+ c_3 + c_4 + c_5 + c_6) + c_8$
+\par
+f) $T(n)$ of VIKING-CALC when line 7 is executed the most number of times is
+	$c_1 + \frac{n}{3} (c_2+ c_3 + c_4 + c_5 + c_6 + c_7) + c_8$
+\par
+g) The worst case total cost run-time of VIKING-CALC is $O(n)$ 
+\par
+h) The best case total cost run-time of VIKING-CALC is $O(n)$ 
+	
+\end{document}

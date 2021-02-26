@@ -1,0 +1,511 @@
+/* I had issues saving my typescript file and I think my session was deleted, so here is a copy and paste of my terminal session. */
+
+
+
+
+Last login: Wed Jan 23 12:00:13 on ttys000
+wlan010-111-050-000:~ harberbarber$ cd csci241
+wlan010-111-050-000:csci241 harberbarber$ ls
+a1-harba000	lab1-harba000
+wlan010-111-050-000:csci241 harberbarber$ git clone https://github.com/csci241-19w/lab-3-harba000.git
+Cloning into 'lab-3-harba000'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+wlan010-111-050-000:csci241 harberbarber$ ls
+a1-harba000	lab-3-harba000	lab1-harba000
+wlan010-111-050-000:csci241 harberbarber$ cd lab-3-harba000/
+wlan010-111-050-000:lab-3-harba000 harberbarber$ ls
+SelectSort.java
+wlan010-111-050-000:lab-3-harba000 harberbarber$ javac -g SelectSort.java
+SelectSort.java:28: error: cannot find symbol
+        inttemp = A[idx1];
+        ^
+  symbol:   variable inttemp
+  location: class SelectSort
+SelectSort.java:30: error: cannot find symbol
+        A[idx2] = temp;
+                  ^
+  symbol:   variable temp
+  location: class SelectSort
+2 errors
+wlan010-111-050-000:lab-3-harba000 harberbarber$ script -a --timing=typescript.timing
+script: illegal option -- -
+usage: script [-adkpqr] [-t time] [file [command ...]]
+wlan010-111-050-000:lab-3-harba000 harberbarber$ javac -g SelecSort.java
+javac: file not found: SelecSort.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+wlan010-111-050-000:lab-3-harba000 harberbarber$ ls
+SelectSort.java
+wlan010-111-050-000:lab-3-harba000 harberbarber$ cd ..
+wlan010-111-050-000:csci241 harberbarber$ ls
+a1-harba000	lab-3-harba000	lab1-harba000
+wlan010-111-050-000:csci241 harberbarber$ cd lab-3-harba000/
+wlan010-111-050-000:lab-3-harba000 harberbarber$ ls
+SelectSort.java
+wlan010-111-050-000:lab-3-harba000 harberbarber$ javac -g SelectSort.java
+SelectSort.java:28: error: cannot find symbol
+        inttemp = A[idx1];
+        ^
+  symbol:   variable inttemp
+  location: class SelectSort
+SelectSort.java:30: error: cannot find symbol
+        A[idx2] = temp;
+                  ^
+  symbol:   variable temp
+  location: class SelectSort
+2 errors
+wlan010-111-050-000:lab-3-harba000 harberbarber$ javac -g SelectSort.java
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> help
+** command list **
+connectors                -- list available connectors and transports in this VM
+
+run [class [args]]        -- start execution of application's main class
+
+threads [threadgroup]     -- list threads
+thread <thread id>        -- set default thread
+suspend [thread id(s)]    -- suspend threads (default: all)
+resume [thread id(s)]     -- resume threads (default: all)
+where [<thread id> | all] -- dump a thread's stack
+wherei [<thread id> | all]-- dump a thread's stack, with pc info
+up [n frames]             -- move up a thread's stack
+down [n frames]           -- move down a thread's stack
+kill <thread id> <expr>   -- kill a thread with the given exception object
+interrupt <thread id>     -- interrupt a thread
+
+print <expr>              -- print value of expression
+dump <expr>               -- print all object information
+eval <expr>               -- evaluate expression (same as print)
+set <lvalue> = <expr>     -- assign new value to field/variable/array element
+locals                    -- print all local variables in current stack frame
+
+classes                   -- list currently known classes
+class <class id>          -- show details of named class
+methods <class id>        -- list a class's methods
+fields <class id>         -- list a class's fields
+
+threadgroups              -- list threadgroups
+threadgroup <name>        -- set current threadgroup
+
+stop in <class id>.<method>[(argument_type,...)]
+                          -- set a breakpoint in a method
+stop at <class id>:<line> -- set a breakpoint at a line
+clear <class id>.<method>[(argument_type,...)]
+                          -- clear a breakpoint in a method
+clear <class id>:<line>   -- clear a breakpoint at a line
+clear                     -- list breakpoints
+catch [uncaught|caught|all] <class id>|<class pattern>
+                          -- break when specified exception occurs
+ignore [uncaught|caught|all] <class id>|<class pattern>
+                          -- cancel 'catch' for the specified exception
+watch [access|all] <class id>.<field name>
+                          -- watch access/modifications to a field
+unwatch [access|all] <class id>.<field name>
+                          -- discontinue watching access/modifications to a field
+trace [go] methods [thread]
+                          -- trace method entries and exits.
+                          -- All threads are suspended unless 'go' is specified
+trace [go] method exit | exits [thread]
+                          -- trace the current method's exit, or all methods' exits
+                          -- All threads are suspended unless 'go' is specified
+untrace [methods]         -- stop tracing method entrys and/or exits
+step                      -- execute current line
+step up                   -- execute until the current method returns to its caller
+stepi                     -- execute current instruction
+next                      -- step one line (step OVER calls)
+cont                      -- continue execution from breakpoint
+
+list [line number|method] -- print source code
+use (or sourcepath) [source file path]
+                          -- display or change the source path
+exclude [<class pattern>, ... | "none"]
+                          -- do not report step or method events for specified classes
+classpath                 -- print classpath info from target VM
+
+monitor <command>         -- execute command each time the program stops
+monitor                   -- list monitors
+unmonitor <monitor#>      -- delete a monitor
+read <filename>           -- read and execute a command file
+
+lock <expr>               -- print lock info for an object
+threadlocks [thread id]   -- print lock info for a thread
+
+pop                       -- pop the stack through and including the current frame
+reenter                   -- same as pop, but current frame is reentered
+redefine <class id> <class file name>
+                          -- redefine the code for a class
+
+disablegc <expr>          -- prevent garbage collection of an object
+enablegc <expr>           -- permit garbage collection of an object
+
+!!                        -- repeat last command
+<n> <command>             -- repeat command n times
+# <command>               -- discard (no-op)
+help (or ?)               -- list commands
+version                   -- print version information
+exit (or quit)            -- exit debugger
+
+<class id>: a full class name with package qualifiers
+<class pattern>: a class name with a leading or trailing wildcard ('*')
+<thread id>: thread number as reported in the 'threads' command
+<expr>: a Java(TM) Programming Language expression.
+Most common syntax is supported.
+
+Startup commands can be placed in either "jdb.ini" or ".jdbrc"
+in user.home or user.dir
+> run
+run SelectSort
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+12 11 13 5 6 7 
+Exception occurred: java.lang.ArrayIndexOutOfBoundsException (uncaught)"thread=main", SelectSort.printA(), line=6 bci=13
+6                System.out.print(a[i] + " ");
+
+main[1] exit
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+
+Fatal error:
+Failed reading output of child java interpreter.
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run
+run SelectSort
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+12 11 13 5 6 7 
+Exception occurred: java.lang.ArrayIndexOutOfBoundsException (uncaught)"thread=main", SelectSort.printA(), line=6 bci=13
+6                System.out.print(a[i] + " ");
+
+main[1] step
+> Exception in thread "main" java.lang.ArrayIndexOutOfB
+Step completed: oundsException: 6
+"thread=main", jdk.internal.misc.VM.initLevel(), line=66 bci=0
+
+main[1] step
+> 
+Step completed: "thread=main", jdk.internal.misc.VM.isModuleSystemInited(), line=87 bci=3
+
+main[1] step
+> 
+Step completed: "thread=main", jdk.internal.misc.VM.initLevel(), line=66 bci=0
+
+main[1] ^[[A
+Unrecognized command: ''.  Try help...
+main[1] step
+> 
+Step completed: "thread=main", jdk.internal.misc.VM.isModuleSystemInited(), line=87 bci=3
+
+main[1] step
+> 	at SelectSort.printA(SelectSort.java:6)
+	at SelectSort.main(SelectSort.java:47)
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> step
+Command 'step' is not valid until the VM is started with the 'run' command
+> stop at SelectSort 4
+Usage: stop at <class>:<line_number> or
+       stop in <class>.<method_name>[(argument_type,...)]
+> stop at SelectSort:4
+Deferring breakpoint SelectSort:4.
+It will be set after the class is loaded.
+> run
+run SelectSort
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Unable to set deferred breakpoint SelectSort:4 : No code at line 4 in SelectSort
+
+Stopping due to deferred breakpoint errors.
+"thread=main", java.lang.Class.getDeclaredMethods0(), line=-1 bci=-1
+
+main[1] run
+VM already running. Use 'cont' to continue after events.
+main[1] step
+> 
+Step completed: "thread=main", jdk.internal.reflect.Reflection.filterMethods(), line=271 bci=0
+
+main[1] cont
+> Original array:
+12 11 13 5 6 7 
+Exception occurred: java.lang.ArrayIndexOutOfBoundsException (uncaught)"thread=main", SelectSort.printA(), line=6 bci=13
+6                System.out.print(a[i] + " ");
+
+main[1] exit
+Exception in thread "main" 
+Fatal error:
+Failed reading output of child java interpreter.
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run 1
+run  1
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Error: Could not find or load main class 1
+Caused by: java.lang.ClassNotFoundException: 1
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 1
+run  SelectSort 1
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+1 
+Exception occurred: java.lang.ArrayIndexOutOfBoundsException (uncaught)"thread=main", SelectSort.printA(), line=6 bci=13
+6                System.out.print(a[i] + " ");
+
+main[1] exit
+Exception in thread "main" wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 1 2 3 4 5
+run  SelectSort 1 2 3 4 5
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+1 2 3 4 5 
+Exception occurred: java.lang.ArrayIndexOutOfBoundsException (uncaught)"thread=main", SelectSort.printA(), line=6 bci=13
+6                System.out.print(a[i] + " ");
+
+main[1] exit
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+
+Fatal error:
+Failed reading output of child java interpreter.
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 1 2 3 4 5
+run  SelectSort 1 2 3 4 5
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+1 2 3 4 5 
+Exception occurred: java.lang.ArrayIndexOutOfBoundsException (uncaught)"thread=main", SelectSort.printA(), line=6 bci=13
+6                System.out.print(a[i] + " ");
+
+main[1] exit
+Exception in thread "main" 
+Fatal error:
+Failed reading output of child java interpreter.
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 1 2 3 4 5
+run  SelectSort 1 2 3 4 5
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+1 2 3 4 5 
+Exception occurred: java.lang.ArrayIndexOutOfBoundsException (uncaught)"thread=main", SelectSort.printA(), line=6 bci=13
+6                System.out.print(a[i] + " ");
+
+main[1] exit
+Exception in thread "main" 
+Fatal error:
+Failed reading output of child java interpreter.
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run
+run SelectSort
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+12 11 13 5 6 7 
+Exception occurred: java.lang.ArrayIndexOutOfBoundsException (uncaught)"thread=main", SelectSort.printA(), line=6 bci=13
+6                System.out.print(a[i] + " ");
+
+main[1] exit
+Exception in thread "main" 
+Fatal error:
+Failed reading output of child java interpreter.
+wlan010-111-050-000:lab-3-harba000 harberbarber$ javac -g SelectSort.java
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run
+run SelectSort
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+12 11 13 5 6 7 
+
+Sorted array:
+13 12 11 6 5 7 
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 3 5 1 2 4
+run  SelectSort 3 5 1 2 4
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+3 5 1 2 4 
+
+Sorted array:
+5 3 2 1 4 
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ javac -g SelectSort.java
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 5 3 7 1 4
+run  SelectSort 5 3 7 1 4
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+5 3 7 1 4 
+
+Sorted array:
+1 3 5 7 4 
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ javac -g SelectSort.java
+^[[Awlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 5 7 4 1 3
+run  SelectSort 5 7 4 1 3
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+5 7 4 1 3 
+
+Sorted array:
+1 4 5 7 3 
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ javac -g SelectSort.java
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 5 7 3 1 4
+run  SelectSort 5 7 3 1 4
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+5 7 3 1 4 
+
+Sorted array:
+1 3 5 7 4 
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ javac -g SelectSort.java
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 5 7 3 1 4
+run  SelectSort 5 7 3 1 4
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+5 7 3 1 4 
+
+Sorted array:
+1 3 4 5 7 
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> run SelectSort 7 19 8 3 3 1 1 12
+run  SelectSort 7 19 8 3 3 1 1 12
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+7 19 8 3 3 1 1 12 
+
+Sorted array:
+1 1 3 3 7 8 12 19 
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> stop in SelectSort.sort
+Deferring breakpoint SelectSort.sort.
+It will be set after the class is loaded.
+> clear SelectSort.sort
+Removed: breakpoint SelectSort.sort
+> watch [access|all] SelectSort.minIndex
+Class containing field must be specified.
+> next
+Command 'next' is not valid until the VM is started with the 'run' command
+> step
+Command 'step' is not valid until the VM is started with the 'run' command
+> run
+run SelectSort
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Original array:
+12 11 13 5 6 7 
+
+Sorted array:
+5 6 7 11 12 13 
+
+The application exited
+wlan010-111-050-000:lab-3-harba000 harberbarber$ jdb SelectSort
+Initializing jdb ...
+> stop at SelectSort:15
+Deferring breakpoint SelectSort:15.
+It will be set after the class is loaded.
+> run
+run SelectSort
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Unable to set deferred breakpoint SelectSort:15 : No code at line 15 in SelectSort
+
+Stopping due to deferred breakpoint errors.
+"thread=main", java.lang.Class.getDeclaredMethods0(), line=-1 bci=-1
+
+main[1] print minIndex
+com.sun.tools.example.debug.expr.ParseException: Name unknown: minIndex
+ minIndex = null
+main[1] dump minIndex
+com.sun.tools.example.debug.expr.ParseException: Name unknown: minIndex
+ minIndex = null
+main[1] locals
+Local variable information not available.  Compile with -g to generate variable information
+main[1] where
+  [1] java.lang.Class.getDeclaredMethods0 (native method)
+  [2] java.lang.Class.privateGetDeclaredMethods (Class.java:3,139)
+  [3] java.lang.Class.getMethodsRecursive (Class.java:3,280)
+  [4] java.lang.Class.getMethod0 (Class.java:3,266)
+  [5] java.lang.Class.getMethod (Class.java:2,063)
+  [6] sun.launcher.LauncherHelper.validateMainClass (LauncherHelper.java:710)
+  [7] sun.launcher.LauncherHelper.checkAndLoadMain (LauncherHelper.java:569)
+main[1] list
+Current method is native
+main[1] !!
+list
+Current method is native
+main[1] exit
+wlan010-111-050-000:lab-3-harba000 harberbarber$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...141 completed.
+
+[Process completed]
+

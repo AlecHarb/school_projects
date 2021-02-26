@@ -1,0 +1,565 @@
+Script started on Wed Jan  9 12:08:56 2019
+[?1034hbash-3.2$ mkdir csci241
+bash-3.2$ cd csci241
+bash-3.2$ ls
+bash-3.2$ git clone htt[s[K[Kps://github.com/csci241-19w/lab-1-harba
+Cloning into 'lab-1-harba'...
+remote: Repository not found.
+fatal: repository 'https://github.com/csci241-19w/lab-1-harba/' not found
+bash-3.2$ git clone https://github.com/csci241-19w/lab-1-harba[C[C000
+Cloning into 'lab-1-harba000'...
+remote: Repository not found.
+fatal: repository 'https://github.com/csci241-19w/lab-1-harba000/' not found
+bash-3.2$ ^[[Agit clone https://github.com/csci241-19w/lab-1-harba000.got[K[Kit
+Cloning into 'lab-1-harba000'...
+remote: Repository not found.
+fatal: repository 'https://github.com/csci241-19w/lab-1-harba000.git/' not found
+bash-3.2$ https://github.com/csci241-19w/lab1-harba000.git
+bash: https://github.com/csci241-19w/lab1-harba000.git: No such file or directory
+bash-3.2$ git clone https://github.com/csci241-19w/lab1-harba000.git
+Cloning into 'lab1-harba000'...
+remote: Enumerating objects: 16, done.[K
+remote: Counting objects:   6% (1/16)   [Kremote: Counting objects:  12% (2/16)   [Kremote: Counting objects:  18% (3/16)   [Kremote: Counting objects:  25% (4/16)   [Kremote: Counting objects:  31% (5/16)   [Kremote: Counting objects:  37% (6/16)   [Kremote: Counting objects:  43% (7/16)   [Kremote: Counting objects:  50% (8/16)   [Kremote: Counting objects:  56% (9/16)   [Kremote: Counting objects:  62% (10/16)   [Kremote: Counting objects:  68% (11/16)   [Kremote: Counting objects:  75% (12/16)   [Kremote: Counting objects:  81% (13/16)   [Kremote: Counting objects:  87% (14/16)   [Kremote: Counting objects:  93% (15/16)   [Kremote: Counting objects: 100% (16/16)   [Kremote: Counting objects: 100% (16/16), done.[K
+remote: Compressing objects:  16% (1/6)   [Kremote: Compressing objects:  33% (2/6)   [Kremote: Compressing objects:  50% (3/6)   [Kremote: Compressing objects:  66% (4/6)   [Kremote: Compressing objects:  83% (5/6)   [Kremote: Compressing objects: 100% (6/6)   [Kremote: Compressing objects: 100% (6/6), done.[K
+remote: Total 16 (delta 2), reused 16 (delta 2), pack-reused 0[K
+Unpacking objects:   6% (1/16)   Unpacking objects:  12% (2/16)   Unpacking objects:  18% (3/16)   Unpacking objects:  25% (4/16)   Unpacking objects:  31% (5/16)   Unpacking objects:  37% (6/16)   Unpacking objects:  43% (7/16)   Unpacking objects:  50% (8/16)   Unpacking objects:  56% (9/16)   Unpacking objects:  62% (10/16)   Unpacking objects:  68% (11/16)   Unpacking objects:  75% (12/16)   Unpacking objects:  81% (13/16)   Unpacking objects:  87% (14/16)   Unpacking objects:  93% (15/16)   Unpacking objects: 100% (16/16)   Unpacking objects: 100% (16/16), done.
+bash-3.2$ ls
+lab1-harba000
+bash-3.2$ cd [K lab1_harba00[K[K[K[K[K[K[K[K-harba000
+bash-3.2$ git config --global user.nam,e[K[Ke [K[K[K[K[K[K[Kr.name Alec Harb
+bash-3.2$ git 0[Kconfig -- g[K[Kglobal user. [Kemail harba@wwu.edu
+bash-3.2$ touch writeup.ts[Kxt
+bash-3.2$ git add writeup.txt #run \[K[K[K[K[K[K[K
+bash-3.2$ commit -m "a[Ka[KAdded em[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit commit 0[K-m "Added empty writeup"
+[master 7231f70] Added empty writeup
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 writeup.txt
+bash-3.2$ git pish[K[K[Kush
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 267 bytes | 267.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/csci241-19w/lab1-harba000.git
+   1ad3bf9..7231f70  master -> master
+bash-3.2$ git add wroteu[K[K[K[Kiteup.txt
+bash-3.2$ git commit -m "adde[K[K[K[KAdded part 1 (names) to r[Kwru[Kiteup"
+[master ec34b9f] Added part 1 (names) to writeup
+ 1 file changed, 1 insertion(+)
+bash-3.2$ git piush
+git: 'piush' is not a git command. See 'git --help'.
+
+The most similar command is
+	push
+bash-3.2$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 266 bytes | 266.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/csci241-19w/lab1-harba000.git
+   7231f70..ec34b9f  master -> master
+bash-3.2$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.DS_Store[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ git add [K[K[K[Kstatus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   writeup.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.DS_Store[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ writeup.txt t[Kstau[Ktus
+bash: writeup.txt: command not found
+bash-3.2$ git add writeup.txt
+bash-3.2$ status [K[K[K[K[K[K[Kgit status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   writeup.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.DS_Store[m
+
+bash-3.2$ git commit -m "ad[K[KAdded hobbies to [K[K[K[K[K[Kes"
+[master f843044] Added hobbies
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+bash-3.2$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.DS_Store[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 279 bytes | 279.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+git status To https://github.com/csci241-19w/lab1-harba000.git
+   ec34b9f..f843044  master -> master
+bash-3.2$ git statu[K[K[K[K[K[K[K[K[Kgut [K[K[Kit status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.DS_Store[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ touch username.txt
+bash-3.2$ git add username.txt
+bash-3.2$ git commit -m '[K"ad[K[KAdded username"
+[master 1802bd4] Added username
+ 1 file changed, 1 insertion(+)
+ create mode 100644 username.txt
+bash-3.2$ git pis[K[Kush
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/csci241-19w/lab1-harba000.git
+   f843044..1802bd4  master -> master
+bash-3.2$ git checkout
+Your branch is up to date with 'origin/master'.
+bash-3.2$ git reset
+bash-3.2$ git rm
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+bash-3.2$ git mv
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --verbose         be verbose
+    -n, --dry-run         dry run
+    -f, --force           force move/rename even if target exists
+    -k                    skip move/rename errors
+
+bash-3.2$ git blame
+usage: git blame [<options>] [<rev-opts>] [<rev>] [--] <file>
+
+    <rev-opts> are documented in git-rev-list(1)
+
+    --incremental         Show blame entries as we find them, incrementally
+    -b                    Show blank SHA-1 for boundary commits (Default: off)
+    --root                Do not treat root commits as boundaries (Default: off)
+    --show-stats          Show work cost statistics
+    --progress            Force progress reporting
+    --score-debug         Show output score for blame entries
+    -f, --show-name       Show original filename (Default: auto)
+    -n, --show-number     Show original linenumber (Default: off)
+    -p, --porcelain       Show in a format designed for machine consumption
+    --line-porcelain      Show porcelain format with per-line commit information
+    -c                    Use the same output mode as git-annotate (Default: off)
+    -t                    Show raw timestamp (Default: off)
+    -l                    Show long commit SHA1 (Default: off)
+    -s                    Suppress author name and timestamp (Default: off)
+    -e, --show-email      Show author email instead of name (Default: off)
+    -w                    Ignore whitespace differences
+    --indent-heuristic    Use an experimental heuristic to improve diffs
+    --minimal             Spend extra cycles to find better match
+    -S <file>             Use revisions from <file> instead of calling git-rev-list
+    --contents <file>     Use <file>'s contents as the final image
+    -C[<score>]           Find line copies within and across files
+    -M[<score>]           Find line movements within and across files
+    -L <n,m>              Process only line range n,m, counting from 1
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+bash-3.2$ git logg[K
+[?1h=[33mcommit 1802bd4ea485335c5adb8eb2a34f165d18b56986[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31m[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31m[m[33m[m[1;31morigin/HEAD[m[33m)[m[m
+Author: Alec <harba@wwu.edu>[m
+Date:   Wed Jan 9 12:46:51 2019 -0800[m
+[m
+    Added username[m
+[m
+[33mcommit f84304468af8f2d846650c27aca9e6dd93a21575[m[m
+Author: Alec <harba@wwu.edu>[m
+Date:   Wed Jan 9 12:45:01 2019 -0800[m
+[m
+    Added hobbies[m
+[m
+[33mcommit ec34b9f16904d2cb2ed0af5916b63f292f07250c[m[m
+Author: Alec <harba@wwu.edu>[m
+Date:   Wed Jan 9 12:37:07 2019 -0800[m
+[m
+    Added part 1 (names) to writeup[m
+[m
+[33mcommit 7231f70047f03fef6e2403d2e957e5416d9ac39a[m[m
+Author: Alec <harba@wwu.edu>[m
+Date:   Wed Jan 9 12:32:37 2019 -0800[m
+[m
+:[K[K[K:[K[K:[K[K[7mNo next tag  (press RETURN)[27m[24;1H[K[K:[K[K    Added empty writeup[m
+[m
+[33mcommit 1ad3bf9e2f8a860177cd3bb4b3187719a8b4c012[m[m
+Author: swehrwein <scott.wehrwein@wwu.edu>[m
+Date:   Tue Jan 8 08:28:10 2019 -0800[m
+[m
+    tabs -> spaces[m
+[m
+[33mcommit 37ed4432cce9369551aa3f7dde9e1bea880f7cbf[m[m
+Author: swehrwein <scott.wehrwein@wwu.edu>[m
+Date:   Fri Jan 4 11:44:35 2019 -0800[m
+[m
+:[K[K:[K[K:[K[K[?1l>bash-3.2$ 
+bash-3.2$ git diff
+[?1h=[K[?1l>bash-3.2$ git di[K[Kdiff
+[?1h=[K[?1l>bash-3.2$ git checkout 0[K-b question3
+Switched to a new branch 'question3'
+bash-3.2$ git commi[K[K[K[K[Kadd writeup.txt
+bash-3.2$ git commiot -m[K[K[K[K[Kt -m "Added quesdtion [K[K[K[K[K[Ktion 3 to branch
+> "
+[question3 c1e8548] Added question 3 to branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+bash-3.2$ git push
+fatal: The current branch question3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin question3
+
+bash-3.2$ git[K[K[Kgit add w[K[K[K[K[Kcommit 0[K-m "add[K[K[KAdded question 3 to bra[K[K[Kbranch"
+On branch question3
+Untracked files:
+	[31m.DS_Store[m
+
+nothing added to commit but untracked files present
+bash-3.2$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+bash-3.2$ git merge question3
+Updating 1802bd4..c1e8548
+Fast-forward
+ writeup.txt | 3 [32m++[m[31m-[m
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+bash-3.2$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/csci241-19w/lab1-harba000.git
+   1802bd4..c1e8548  master -> master
+bash-3.2$ git branch -d question3
+Deleted branch question3 (was c1e8548).
+bash-3.2$ gradle build
+bash: gradle: command not found
+bash-3.2$ cds[K src
+bash-3.2$ gradle build
+bash: gradle: command not found
+bash-3.2$ cd csci241
+bash: cd: csci241: No such file or directory
+bash-3.2$ q
+bash: q: command not found
+bash-3.2$ ls
+main
+bash-3.2$ cd
+bash-3.2$ cd csci241
+bash-3.2$ ls
+lab1-harba000
+bash-3.2$ ls [K[K[Kgradle build
+bash: gradle: command not found
+bash-3.2$ cd lab2[K1-hja[K[Karb a000[K[K[K[K[Ka000
+bash-3.2$ gra[K[K[Kls
+build.gradle	settings.gradle	src		username.txt	writeup.txt
+bash-3.2$ grand[K[Kdle build
+bash: gradle: command not found
+bash-3.2$ cd src/main/jaba[K[Kva/lab1
+bash-3.2$ gradle build
+bash: gradle: command not found
+bash-3.2$ ls
+Hello.java
+bash-3.2$ gradle build hello.[K[K[K[K[K[KHello.java
+bash: gradle: command not found
+bash-3.2$ skd [K[K[Kdk install gradle 5.1
+bash: sdk: command not found
+bash-3.2$ sudo -s
+Password:
+[?1034hbash-3.2# sdk install grand[K[Kdle 5.1
+bash: sdk: command not found
+bash-3.2# brew install gradle
+bash: brew: command not found
+bash-3.2# schoop install gradle
+bash: schoop: command not found
+bash-3.2# port install gradle
+bash: port: command not found
+bash-3.2# ls
+Hello.java
+bash-3.2# gradle run
+bash: gradle: command not found
+bash-3.2# cd
+bash-3.2# cd csci241
+bash-3.2# ls
+.DS_Store	lab1-harba000
+bash-3.2# cd L[Klab2[K1-a[Kharba000
+bash-3.2# ls
+.DS_Store	build.gradle	src		writeup.txt
+.git		settings.gradle	username.txt
+bash-3.2# build gra[K[K[K[K[K[K[K[K[Kgradle build
+bash: gradle: command not found
+bash-3.2# gradle
+bash: gradle: command not found
+bash-3.2# ls
+.DS_Store	build.gradle	src		writeup.txt
+.git		settings.gradle	username.txt
+bash-3.2# gradle build
+[0m
+Welcome to Gradle 5.1.1!
+
+Here are the highlights of this release:
+ - Control which dependencies can be retrieved from which repositories
+ - Production-ready configuration avoidance APIs
+
+For more details see https://docs.gradle.org/5.1.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+
+[2A[1B[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings > Compiling /Users/harberbarber/csci241/lab1-harba000/set[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[0K[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings > Compiling /Users/harberbarber/csci241/lab1-harba000/set[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings > Compiling /Users/harberbarber/csci241/lab1-harba000/set[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [1s][m[36D[1B[1m> Evaluating settings > Compiling /Users/harberbarber/csci241/lab1-harba000/set[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [1s][m[36D[1B[1m> Evaluating settings[m[0K[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[0K[35D[1B[1m> Loading projects[m[0K[18D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> Loading projects[m[18D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project > Compiling /Users/harberbarber/csci241/lab1-harba000/build.grad[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [2s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [2s][m[37D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [2s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [2s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [2s][m[37D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [2s][m[0K[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [2s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > guava-26.0-jre.pom[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [2s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > guava-26.0-jre.pom[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > guava-26.0-jre.pom[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > guava-26.0-jre.pom[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > guava-26.0-jre.pom[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > guava-26.0-jre.pom[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > guava-26.0-jre.pom[m[79D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath[m[0K[58D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath[m[58D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath[m[58D[1B
+
+
+[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > checker-qual-2.5.2[m[79D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > jsr305-3.0.2.pom[m[77D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > error_prone_annota[m[79D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > j2objc-annotations[m[79D[1B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [3s][m[33D[1B> IDLE[0K[6D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > oss-parent-7.pom[m[77D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > error_prone_annota[m[79D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath > j2objc-annotations[m[79D[1B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[2B[1m> :compileJava > Resolve dependencies of :compileClasspath[m[0K[58D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[1B[1m> :compileJava > Resolve files of :compileClasspath > j2objc-annotations-1.1.ja[m[79D[1B[1m> :compileJava > Resolve files of :compileClasspath > checker-qual-2.5.2.jar > [m[79D[1B[1m> :compileJava > Resolve files of :compileClasspath > guava-26.0-jre.jar[m[72D[1B[1m> :compileJava > Resolve files of :compileClasspath > animal-sniffer-annotation[m[79D[1B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :compileJava > Resolve files of :compileClasspath > guava-26.0-jre.jar[m[72D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[3B[1m> :compileJava > Resolve files of :compileClasspath > guava-26.0-jre.jar > 352 [m[79D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[3B[1m> :compileJava > Resolve files of :compileClasspath > guava-26.0-jre.jar > 1.30[m[79D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[3B[1m> :compileJava > Resolve files of :compileClasspath > guava-26.0-jre.jar > 1.80[m[79D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[3B[1m> :compileJava > Resolve files of :compileClasspath[m[0K[51D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[3B[1m> :compileJava[m[0K[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [4s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [5s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [6s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [7s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [7s][m[33D[3B[1m> :compileJava[m[14D[2B[5A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [7s][m[34D[3B[1m> :startScripts[m[15D[2B[5A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [7s][m[34D[3B[1m> :startScripts[m[15D[2B[5A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [7s][m[34D[3B[1m> :startScripts[m[15D[2B[5A[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [7s][m[34D[3B[1m> :distZip[m[0K[10D[2B[5A[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [7s][m[34D[3B[1m> :distZip[m[10D[2B[5A[0K
+[32;1mBUILD SUCCESSFUL[0;39m in 10s
+5 actionable tasks: 5 executed
+[2B[0K
+[0K
+[0K
+[5A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[5B[5A[2K[1B[2K[1B[2K[1B[2K[1B[2K[4A[0mbash-3.2# gradle run
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava > Resolve dependencies of :compileClasspath[m[58D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[0K[6D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[1m> Task :run[m
+Hello, world!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 1s
+2 actionable tasks: 1 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mbash-3.2# ls
+.DS_Store	.gradle		build.gradle	src		writeup.txt
+.git		build		settings.gradle	username.txt
+bash-3.2# gradle run --args="your args here"
+[0m
+[1A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [0s][m[37D[1B
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[0K[33D[1B[1m> :compileJava[m[14D[1B[2A[0K
+[31;1m> Task :compileJava[0;39m[31m FAILED[39m
+/Users/harberbarber/csci241/lab1-harba000/src/main/java/lab1/Hello.java:5: error: cannot find symbol
+    System.out.println("Hello, s!", argv[0]);
+                                    ^
+  symbol:   variable argv
+  location: class Hello
+1 error
+
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+[33m> [39mCompilation failed; see the compiler error output for details.
+
+* Try:
+Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0mbash-3.2# gradle run --args="your args here"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[0K
+[31;1m> Task :compileJava[0;39m[31m FAILED[39m
+/Users/harberbarber/csci241/lab1-harba000/src/main/java/lab1/Hello.java:5: error: no suitable method found for println(String,String)
+    System.out.println("Hello, s!", args[0]);
+              ^
+    method PrintStream.println() is not applicable
+      (actual and formal argument lists differ in length)
+    method PrintStream.println(boolean) is not applicable
+      (actual and formal argument lists differ in length)
+    method PrintStream.println(char) is not applicable
+      (actual and formal argument lists differ in length)
+    method PrintStream.println(int) is not applicable
+      (actual and formal argument lists differ in length)
+    method PrintStream.println(long) is not applicable
+      (actual and formal argument lists differ in length)
+    method PrintStream.println(float) is not applicable
+      (actual and formal argument lists differ in length)
+    method PrintStream.println(double) is not applicable
+      (actual and formal argument lists differ in length)
+    method PrintStream.println(char[]) is not applicable
+      (actual and formal argument lists differ in length)
+    method PrintStream.println(String) is not applicable
+      (actual and formal argument lists differ in length)
+    method PrintStream.println(Object) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+[33m> [39mCompilation failed; see the compiler error output for details.
+
+* Try:
+Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0mbash-3.2# gradle run --args="your args here"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[0K
+[31;1m> Task :compileJava[0;39m[31m FAILED[39m
+/Users/harberbarber/csci241/lab1-harba000/src/main/java/lab1/Hello.java:5: error: ')' expected
+    System.out.println("Hello, " + args[0]!);
+                                          ^
+1 error
+
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+[33m> [39mCompilation failed; see the compiler error output for details.
+
+* Try:
+Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+1 actionable task: 1 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0mbash-3.2# gradle run --args="your args here"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[0K[6D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[1m> Task :run[m
+Hello, your
+
+[32;1mBUILD SUCCESSFUL[0;39m in 1s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mbash-3.2# gradle run--args'241[K[K[K[K"[K="241"
+[0m
+[1A
+[31mFAILURE: [39m[31mBuild failed with an exception.[39m
+
+* What went wrong:
+Task 'run--args=241' not found in root project 'lab1'.
+
+* Try:
+Run [1mgradle tasks[m to get a list of available tasks. Run with [1m--stacktrace[m option to get the stack trace. Run with [1m--info[m or [1m--debug[m option to get more log output. Run with [1m--scan[m to get full insights.
+
+* Get more help at [1mhttps://help.gradle.org[m
+
+[31;1mBUILD FAILED[0;39m in 0s
+
+[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1A[2K[0mbash-3.2# gradle run--args="241" --args="241"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[0K[34D[1B[1m> :run[m[0K[6D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[1m> Task :run[m
+Hello, 241
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mbash-3.2# gradle run --args="241"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[0K[6D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[1m> Task :run[m
+Hello, 241!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 1s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0mbash-3.2# git add [K[K[K[K[K[K[K[Kls
+.DS_Store	.gradle		build.gradle	src		writeup.txt
+.git		build		settings.gradle	username.txt
+bash-3.2# git add src/main/java/lab2[K1/Hello.hjava[K[K[K[K[Kjava
+bash-3.2# git commit -m "He;;p npw [rionts [K[K[K[K[K[K[K[K[K[Kd[K[K[K[K[K[K[Kllo now prints command line arg"
+[master 5f667c1] Hello now prints command line arg
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+bash-3.2# git push
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 483 bytes | 483.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/csci241-19w/lab1-harba000.git
+   c1e8548..5f667c1  master -> master
+bash-3.2# exit
+exit
+bash-3.2$ ls
+Hello.java
+bash-3.2$ cd
+bash-3.2$ cd csci241
+bash-3.2$ ls
+lab1-harba000
+bash-3.2$ cd l;ab[K[K[Kab1=[K-harba000
+bash-3.2$ ks[K[Kls
+build		settings.gradle	typescript	writeup.txt
+build.gradle	src		username.txt
+bash-3.2$ git add typescript
+bash-3.2$ coit [K[K[K[K[Kgit commit -m tyep[K[K[K[K"adding typescript"
+[master da25389] adding typescript
+ 1 file changed, 541 insertions(+)
+ create mode 100644 typescript
+bash-3.2$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 5.81 KiB | 5.81 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/csci241-19w/lab1-harba000.git
+   5f667c1..da25389  master -> master
+bash-3.2$ 
